@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    background-color: transparent;
+    background-image: none;
+}
+.parallax{
+  background-image: url(../media/marvel-logo.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+    font-size: 60px;
+    color: white;
+    text-shadow: 4px 4px black;
+    background-color: maroon;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+}
+nav{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul {
+    background: darkred;
+    padding: 0 20px;
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    color:white;
+    font-weight:900;
+}
+nav ul li{
+	display: inline-table;
+}
+nav ul li:hover{
+	background: maroon;
+	border-radius: 10px;
+}
+nav ul li a{
+	display: block;
+	padding: 25px 40px;
+	color: white;
+	text-decoration: none;
+}
+nav ul li:hover a {
+    color:red;
+    text-decoration: none;
+}
+#flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div div{
+    margin: 1.5%;
+    padding: 20px;
+    background: maroon;
+    min-width: 422px;
+    max-width: 422px;
+    height: 606px;
+    flex: 1;
+}
+div div:hover{
+    transform: scale(1.25, 1.25);
+}
+aside{
+    font-size: 24px;
+    color: white;
+    text-shadow: 4px 4px black;
+    background-color: maroon;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 1px 1px black;
+    background-color: maroon;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: right;
+}
+.container{
+    position: relative;
+}
+.rating{
+    font-size: 40px;
+    height: 568px;
+    width: 382px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: -20px;
+    visibility: hidden;
+    word-wrap: normal;
+    z-index: 10;
+}
+.container:hover .rating{
+    visibility: visible;
+}
+div div p a img:hover{
+    transform: scale(1.25, 1.25);
+}
+/* for mobile phones */
+[class*="col-"]{
+    width: 100%; /* this is being overridden in tablet and descktop */
+    float: left; /* sets defualts for everything including tablet and desktop */
+    padding: 15px; /* sets the default for everthing including tablet and descktop */
+}
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    nav{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
